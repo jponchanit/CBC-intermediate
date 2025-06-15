@@ -2,21 +2,23 @@
 class Person():
     def __init__(self, name):
         self.name = name 
+    def greet(self):
+        print (f'Hello, My name is {self.name}.')
+        
         
 class Teacher(Person):
     def __init__(self, name, name_t):
-        super().def __init__(self, name):
-            self.name = name
-            self.name_t = name_t
-    def teacher(self):
-        
+        super(). __init__(name)
+        self.name_t = name_t
+    def teach(self):
+        print (f'Im Teacher teaching class')    
         
 # Example:
-# p = Person("Alice")
-# t = Teacher("Bob")
-# p.greet()
-# t.greet()
-# t.teach()
+p = Person("Alice")
+t = Teacher("Alice", "Bob")
+p.greet()
+t.greet()
+t.teach()
 
 # Expected Output:
 # Hello, my name is Alice.
