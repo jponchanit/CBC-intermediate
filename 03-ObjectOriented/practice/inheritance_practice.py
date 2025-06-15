@@ -7,15 +7,15 @@ class Person():
         
         
 class Teacher(Person):
-    def __init__(self, name, name_t):
-        super(). __init__(name)
-        self.name_t = name_t
+    def __init__(self, name_t):
+        super(). __init__(name_t)
+        self.name = name_t
     def teach(self):
         print (f'Im Teacher teaching class')    
         
 # Example:
 p = Person("Alice")
-t = Teacher("Alice", "Bob")
+t = Teacher("Bob")
 p.greet()
 t.greet()
 t.teach()
